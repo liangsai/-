@@ -53,13 +53,26 @@
 	</style>
 </head>
 <body>
-	<h1></h1>
-	<hr>
-	<h2><a href="http://aria2.sourceforge.net/manual/en/html/aria2c.html" target="_blank">Aria2 使用说明</a></h2>
-	<div class="content">
-
-	</div>
 	<h2><a href="https://sourceforge.net/projects/aria2/files/stable/" target="_blank">Aria2 源码/服务器程序下载</a></h2>
+    <h2><a href="https://github.com/jackpal/Android-Terminal-Emulator/" target="_blank">超级终端下载</a></h2>
+	<hr>
+	<h2>Aria2 使用说明</h2>
+	<div class="content">
+将服务器文件 aria2复制到内存卡根目录，打开超级终端输入以下命令:
+<hr>
+<hr>
+1. Copy aria2c executable to /mnt/sdcard on your device.
+<hr>
+2. mkdir /data/data/jackpal.androidterm/aria2
+<hr>
+3. cat /mnt/sdcard/aria2c > /data/data/jackpal.androidterm/aria2/aria2c
+<hr>
+4. chmod 744 /data/data/jackpal.androidterm/aria2/aria2c
+<hr>
+5. export HOME=/data/data/jackpal.androidterm/aria2; cd $HOME
+<hr>
+6.  ./aria2c -v
+	</div>
 
 </body>
 </html>
